@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Марина Козырева](https://up.htmlacademy.ru/htmlcss-individual/2/user/403849).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
+* Сайт: [Мой проект Седона](https://itmaritana.github.io/403849-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>

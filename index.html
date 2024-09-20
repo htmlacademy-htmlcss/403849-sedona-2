@@ -46,7 +46,7 @@
 
       <main class="main">
         <section class="hero">
-          <h1 class="visually-hidden">Седона</h1>
+          <h1 class="visually-hidden" hidden>Седона</h1>
           <img src="images/welcome-sedona.svg" width="458" height="352" alt="Welcome to Sedona" class="hero-image">
         </section>
 
@@ -60,10 +60,12 @@
           </p>
           <ul class="advantages-list">
             <li class="advantages-item advantages-item-blue">
-              <h3 class="advantages-title">Настоящий городок</h3>
-              <p class="advantages-description">
-                Седона — не аттракцион для туристов, там течет своя жизнь
-              </p>
+              <div>
+                <h3 class="advantages-title">Настоящий городок</h3>
+                <p class="advantages-description">
+                  Седона — не аттракцион для туристов, там течет своя жизнь
+                </p>
+              </div>
               <img src="images/real-city.jpg" width="800" height="385" alt="Городок" class="advantages-image">
             </li>
             <li class="advantages-item advantages-item-silver">
@@ -86,17 +88,19 @@
             </li>
             <li class="advantages-item advantages-item-blue">
               <img src="images/devils-bridge.jpg" width="800" height="385" alt="Мост Дьявола" class="advantages-image">
-              <h3 class="advantages-title">Там есть мост Дьявола</h3>
-              <p class="advantages-description">
-                Да, по нему можно пройти! Если вы осмелитесь,
-                разумеется
-              </p>
+              <div>
+                <h3 class="advantages-title">Там есть мост Дьявола</h3>
+                <p class="advantages-description">
+                  Да, по нему можно пройти! Если вы осмелитесь,
+                  разумеется
+                </p>
+              </div>
             </li>
           </ul>
         </section>
 
         <section class="services">
-          <h2 class="visually-hidden">Услуги</h2>
+          <h2 class="visually-hidden" hidden>Услуги</h2>
           <p class="title">
             Приезжайте в Седону отдохнуть в комфорте и уюте!
           </p>
@@ -127,7 +131,7 @@
         </section>
 
         <section class="booking">
-          <h2 class="visually-hidden">Бронирование</h2>
+          <h2 class="visually-hidden" hidden>Бронирование</h2>
           <p class="title">
             Заинтересовались?
           </p>
@@ -148,7 +152,7 @@
           </p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="mailing-form-field">
-              <span class="visually-hidden">Введите ваш e-mail</span>
+              <span class="visually-hidden" hidden>Введите ваш e-mail</span>
               <input type="email" name="email" placeholder="Ваш e-mail" required class="mailing-form-input">
             </label>
             <button class="btn btn-blue" type="submit">Подписаться</button>
@@ -157,40 +161,42 @@
       </main>
 
       <footer class="page-footer">
-        <section class="footer-social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link vk">
-                <span class="visually-hidden">Вконтакте</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link tg">
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a href="#" class="footer-social-link yt">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-          </ul>
-        </section>
+        <div class="footer-container">
+          <section class="footer-social">
+            <h2 class="visually-hidden" hidden>Социальные сети</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link vk">
+                  <span class="visually-hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link tg">
+                  <span class="visually-hidden">Telegram</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a href="#" class="footer-social-link yt">
+                  <span class="visually-hidden">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </section>
 
-        <section class="footer-contacts">
-          <h2 class="visually-hidden">Контакты</h2>
-          <a href="tel:+78128121212" class="footer-contacts-link">
-            +7 (812) 812-12-12
-          </a>
-        </section>
+          <section class="footer-contacts">
+            <h2 class="visually-hidden" hidden>Контакты</h2>
+            <a href="tel:+78128121212" class="footer-contacts-link">
+              +7 (812) 812-12-12
+            </a>
+          </section>
 
-        <section class="footer-copyright">
-          <h2 class="visually-hidden">Копирайт</h2>
-          <a href="https://htmlacademy.ru/" class="footer-copyright-link">
-            <img src="images/logo-html-academy.svg" width="115" height="33" alt="HTML Academy">
-          </a>
-        </section>
+          <section class="footer-copyright">
+            <h2 class="visually-hidden" hidden>Копирайт</h2>
+            <a href="https://htmlacademy.ru/" class="footer-copyright-link">
+              <img src="images/logo-html-academy.svg" width="115" height="33" alt="HTML Academy">
+            </a>
+          </section>
+        </div>
       </footer>
     </div>
   </body>

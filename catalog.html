@@ -129,13 +129,13 @@
                 <option value="popular">Сначала популярные</option>
               </select>
 
-              <a href="#" class="button-view button-view-check">
+              <a href="#" class="button-view button-view-card button-view-check">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
-              <a href="#" class="button-view">
+              <a href="#" class="button-view button-view-gallery">
                 <span class="visually-hidden">Показать галерею</span>
               </a>
-              <a href="#" class="button-view">
+              <a href="#" class="button-view button-view-lists">
                 <span class="visually-hidden">Показать списки</span>
               </a>
             </div>
@@ -152,7 +152,7 @@
                 <b class="hotel-price">От 4000 ₽</b>
                 <a class="btn" href="#">Подробнее</a>
                 <a class="btn btn-blue" href="#">В избранное</a>
-                <span class="hotel-stars">
+                <span class="hotel-stars four-hotel-stars">
                   <span class="visually-hidden">4 звезды</span>
                 </span>
                 <span class="hotel-rating">Рейтинг 8,5</span>
@@ -169,7 +169,7 @@
                 <b class="hotel-price">От 5000 ₽</b>
                 <a class="btn" href="#">Подробнее</a>
                 <a class="btn btn-green" href="#">В избранном</a>
-                <span class="hotel-stars">
+                <span class="hotel-stars four-hotel-stars">
                   <span class="visually-hidden">4 звезды</span>
                 </span>
                 <span class="hotel-rating">Рейтинг 9,2</span>
@@ -186,7 +186,7 @@
                 <b class="hotel-price">От 2500 ₽</b>
                 <a class="btn" href="#">Подробнее</a>
                 <a class="btn btn-blue" href="#">В избранное</a>
-                <span class="hotel-stars">
+                <span class="hotel-stars three-hotel-stars">
                   <span class="visually-hidden">3 звезды</span>
                 </span>
                 <span class="hotel-rating">Рейтинг 6,9</span>
@@ -203,7 +203,7 @@
                 <b class="hotel-price">От 1500 ₽</b>
                 <a class="btn" href="#">Подробнее</a>
                 <a class="btn btn-blue" href="#">В избранное</a>
-                <span class="hotel-stars">
+                <span class="hotel-stars two-hotel-stars">
                   <span class="visually-hidden">2 звезды</span>
                 </span>
                 <span class="hotel-rating">Рейтинг 5,0</span>
@@ -239,15 +239,14 @@
             Подпишитесь на рассылку
           </p>
           <p class="subtitle">
-            Только полезная информация и никакого спама,
-            честное бойскаутское!
+            Только полезная информация и никакого спама,<br> честное бойскаутское!
           </p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="mailing-form-field">
               <span class="visually-hidden">Введите ваш e-mail</span>
               <input type="email" name="email" placeholder="Ваш e-mail" required class="mailing-form-input">
             </label>
-            <button class="btn btn-blue" type="submit">Подписаться</button>
+            <button class="btn btn-blue mailing-form-btn" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -258,17 +257,17 @@
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a href="#" class="footer-social-link vk">
+                <a href="https://vk.com/htmlacademy" class="footer-social-link footer-social-vk">
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a href="#" class="footer-social-link tg">
+                <a href="https://t.me/htmlacademy" class="footer-social-link footer-social-tg">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a href="#" class="footer-social-link yt">
+                <a href="https://www.youtube.com/user/htmlacademyru" class="footer-social-link footer-social-yt">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
@@ -281,10 +280,10 @@
               +7 (812) 812-12-12
             </a>
           </section>
+
           <section class="footer-copyright">
             <h2 class="visually-hidden">Копирайт</h2>
             <a href="https://htmlacademy.ru/" class="footer-copyright-link">
-              <img src="images/logo-html-academy.svg" width="115" height="33" alt="HTML Academy">
             </a>
           </section>
         </div>

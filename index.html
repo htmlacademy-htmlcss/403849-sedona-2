@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="icon/favicon.ico">
   </head>
   <body>
     <div class="page-container">
@@ -38,7 +39,7 @@
               </a>
             </li>
             <li class="main-nav-item">
-              <a href="catalog.html" class="main-nav-btn btn">Хочу сюда!</a>
+              <a href="catalog.html" class="btn">Хочу сюда!</a>
             </li>
           </ul>
         </nav>
@@ -91,7 +92,7 @@
             <li class="advantages-item advantages-item-blue">
               <img src="images/devils-bridge.jpg" width="800" height="385" alt="Мост Дьявола" class="advantages-image">
               <div class="advantages-wrapper">
-                <h3 class="advantages-title">Там есть мост Дьявола</h3>
+                <h3 class="advantages-title">Там есть<br> мост Дьявола</h3>
                 <p class="advantages-description">
                   Да, по нему можно пройти! Если вы осмелитесь,
                   разумеется
@@ -115,18 +116,18 @@
             <li class="services-item services-item-light-blue">
               <h3 class="services-title">Жильё</h3>
               <p class="services-description">
-                Рекомендуем пожить в&nbsp;настоящем мотеле,
+                Рекомендуем пожить в&nbsp;настоящем мотеле,<br>
                 всё как в кино!
               </p>
             </li>
             <li class="services-item">
-              <h3 class="services-title">Еда</h3>
+              <h3 class="services-title services-title-food">Еда</h3>
               <p class="services-description">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
             <li class="services-item services-item-light-blue">
-              <h3 class="services-title">Сувениры</h3>
+              <h3 class="services-title services-title-souvenirs">Сувениры</h3>
               <p class="services-description">
                 Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!
               </p>
@@ -151,15 +152,14 @@
             Подпишитесь на рассылку
           </h2>
           <p class="subtitle">
-            Только полезная информация и никакого спама,
-            честное бойскаутское!
+            Только полезная информация и никакого спама,<br> честное бойскаутское!
           </p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="mailing-form-field">
               <span class="visually-hidden">Введите ваш e-mail</span>
               <input type="email" name="email" placeholder="Ваш e-mail" required class="mailing-form-input">
             </label>
-            <button class="btn btn-blue" type="submit">Подписаться</button>
+            <button class="btn btn-blue mailing-form-btn" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
@@ -170,17 +170,17 @@
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a href="#" class="footer-social-link vk">
+                <a href="https://vk.com/htmlacademy" class="footer-social-link footer-social-vk">
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a href="#" class="footer-social-link tg">
+                <a href="https://t.me/htmlacademy" class="footer-social-link footer-social-tg">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a href="#" class="footer-social-link yt">
+                <a href="https://www.youtube.com/user/htmlacademyru" class="footer-social-link footer-social-yt">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
@@ -197,7 +197,6 @@
           <section class="footer-copyright">
             <h2 class="visually-hidden">Копирайт</h2>
             <a href="https://htmlacademy.ru/" class="footer-copyright-link">
-              <img src="images/logo-html-academy.svg" width="115" height="33" alt="HTML Academy">
             </a>
           </section>
         </div>

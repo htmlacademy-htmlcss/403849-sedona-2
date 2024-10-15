@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body>
     <div class="page-container">
@@ -67,19 +68,22 @@
               <ul class="form-filters-list">
                 <li class="form-filters-item">
                   <label class="form-filters-check">
-                    <input type="checkbox" name="infrastructure"  value="pool" checked>
+                    <input type="checkbox" name="infrastructure"  value="pool" checked class="visually-hidden">
+                    <span class="control"></span>
                     Бассейн
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-check">
-                    <input type="checkbox" name="infrastructure" value="parking" checked>
+                    <input type="checkbox" name="infrastructure" value="parking" checked class="visually-hidden">
+                    <span class="control"></span>
                     Парковка
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-check">
-                    <input type="checkbox" name="infrastructure" value="wi-fi">
+                    <input type="checkbox" name="infrastructure" value="wi-fi" class="visually-hidden">
+                    <span class="control"></span>
                     Wi-Fi
                   </label>
                 </li>
@@ -92,23 +96,53 @@
               <ul class="form-filters-list">
                 <li class="form-filters-item">
                   <label class="form-filters-radio">
-                    <input type="radio" name="type-housing" value="hotel" checked>
+                    <input type="radio" name="type-housing" value="hotel" checked class="visually-hidden">
+                    <span class="control"></span>
                     Гостиница
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-radio">
-                    <input type="radio" name="type-housing" value="motel">
+                    <input type="radio" name="type-housing" value="motel" class="visually-hidden">
+                    <span class="control"></span>
                     Мотель
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-radio">
-                    <input type="radio" name="type-housing" value="apartments">
+                    <input type="radio" name="type-housing" value="apartments" class="visually-hidden">
+                    <span class="control"></span>
                     Апартаменты
                   </label>
                 </li>
               </ul>
+            </fieldset>
+            <fieldset class="form-filters-group form-range-group">
+              <legend class="form-filters-title">
+                Стоимость, ₽:
+              </legend>
+              <div class="range">
+                <div class="range-form">
+                  <label class="range-label">
+                    <input type="number" name="min-price" value="0">
+                    <span>от</span>
+                  </label>
+                  <label class="range-label">
+                    <input type="number" name="max-price" value="9000">
+                    <span>до</span>
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar" style="width: 226px;">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </fieldset>
             <div class="form-filters-buttons">
               <button type="submit" class="btn btn-blue">Применить</button>
@@ -244,7 +278,7 @@
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="mailing-form-field">
               <span class="visually-hidden">Введите ваш e-mail</span>
-              <input type="email" name="email" placeholder="Ваш e-mail" required class="mailing-form-input">
+              <input type="email" name="email" placeholder="Ваш e-mail" required class="mailing-form-email">
             </label>
             <button class="btn btn-blue mailing-form-btn" type="submit">Подписаться</button>
           </form>

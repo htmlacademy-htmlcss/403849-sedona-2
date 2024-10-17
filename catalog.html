@@ -12,15 +12,15 @@
         <nav class="main-nav">
           <ul class="main-nav-list">
             <li class="main-nav-item main-nav-logo">
-              <a href="index.html" class="logo-link">
-                <img src="images/logo.svg" width="140" height="70" alt="Логотип Седоны" class="logo">
+              <a class="logo-link" href="index.html">
+                <img class="logo" src="images/logo.svg" width="140" height="70" alt="Логотип Седоны.">
               </a>
             </li>
             <li class="main-nav-item">
-              <a href="index.html" class="main-nav-link">Главная</a>
+              <a class="main-nav-link" href="index.html">Главная</a>
             </li>
             <li class="main-nav-item">
-              <a href="#" class="main-nav-link">О Седоне</a>
+              <a class="main-nav-link" href="#">О Седоне</a>
             </li>
             <li class="main-nav-item">
               <a class="main-nav-link main-nav-link-current">Гостиницы</a>
@@ -28,12 +28,12 @@
           </ul>
           <ul class="main-nav-list main-nav-user">
             <li class="main-nav-item">
-              <a href="#" class="main-nav-link main-nav-link-search">
+              <a class="main-nav-link main-nav-link-search" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="main-nav-item">
-              <a href="#" class="main-nav-link main-nav-link-favorites">
+              <a class="main-nav-link main-nav-link-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="badge">12</span>
               </a>
@@ -50,77 +50,63 @@
           <h1 class="filters-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-              <a href="index.html" class="breadcrumbs-link breadcrumbs-link-home">
+              <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                 <span class="visually-hidden">Главная</span>
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">
-                Гостиницы
-              </a>
+              <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
           <form class="form-filters" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="form-filters-group">
-              <legend class="form-filters-title">
-                Инфраструктура:
-              </legend>
+              <legend class="form-filters-title">Инфраструктура:</legend>
               <ul class="form-filters-list">
                 <li class="form-filters-item">
                   <label class="form-filters-check">
-                    <input type="checkbox" name="infrastructure"  value="pool" checked class="visually-hidden">
-                    <span class="control"></span>
-                    Бассейн
+                    <input class="visually-hidden" type="checkbox" name="infrastructure"  value="pool" checked>
+                    <span class="control"></span>Бассейн
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-check">
-                    <input type="checkbox" name="infrastructure" value="parking" checked class="visually-hidden">
-                    <span class="control"></span>
-                    Парковка
+                    <input class="visually-hidden" type="checkbox" name="infrastructure" value="parking" checked>
+                    <span class="control"></span>Парковка
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-check">
-                    <input type="checkbox" name="infrastructure" value="wi-fi" class="visually-hidden">
-                    <span class="control"></span>
-                    Wi-Fi
+                    <input class="visually-hidden" type="checkbox" name="infrastructure" value="wi-fi">
+                    <span class="control"></span>Wi-Fi
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form-filters-group">
-              <legend class="form-filters-title">
-                Тип жилья:
-              </legend>
+              <legend class="form-filters-title">Тип жилья:</legend>
               <ul class="form-filters-list">
                 <li class="form-filters-item">
                   <label class="form-filters-radio">
-                    <input type="radio" name="type-housing" value="hotel" checked class="visually-hidden">
-                    <span class="control"></span>
-                    Гостиница
+                    <input class="visually-hidden" type="radio" name="type-housing" value="hotel" checked>
+                    <span class="control"></span>Гостиница
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-radio">
-                    <input type="radio" name="type-housing" value="motel" class="visually-hidden">
-                    <span class="control"></span>
-                    Мотель
+                    <input class="visually-hidden" type="radio" name="type-housing" value="motel">
+                    <span class="control"></span>Мотель
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-radio">
-                    <input type="radio" name="type-housing" value="apartments" class="visually-hidden">
-                    <span class="control"></span>
-                    Апартаменты
+                    <input class="visually-hidden" type="radio" name="type-housing" value="apartments">
+                    <span class="control"></span>Апартаменты
                   </label>
                 </li>
               </ul>
             </fieldset>
             <fieldset class="form-filters-group form-range-group">
-              <legend class="form-filters-title">
-                Стоимость, ₽:
-              </legend>
+              <legend class="form-filters-title">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range-form">
                   <label class="range-label">
@@ -145,8 +131,8 @@
               </div>
             </fieldset>
             <div class="form-filters-buttons">
-              <button type="submit" class="btn btn-blue">Применить</button>
-              <button type="reset" class="btn btn-transparent">Сбросить</button>
+              <button class="btn btn-blue" type="submit">Применить</button>
+              <button class="btn btn-transparent" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -163,13 +149,13 @@
                 <option value="popular">Сначала популярные</option>
               </select>
 
-              <a href="#" class="button-view button-view-card button-view-check">
+              <a class="button-view button-view-card button-view-check" href="#">
                 <span class="visually-hidden">Показать карточки</span>
               </a>
-              <a href="#" class="button-view button-view-gallery">
+              <a class="button-view button-view-gallery" href="#">
                 <span class="visually-hidden">Показать галерею</span>
               </a>
-              <a href="#" class="button-view button-view-lists">
+              <a class="button-view button-view-lists" href="#">
                 <span class="visually-hidden">Показать списки</span>
               </a>
             </div>
@@ -177,7 +163,7 @@
 
           <ul class="hotel-list">
             <li class="hotel-card">
-              <a href="#" class="hotel-card-link">
+              <a class="hotel-card-link" href="#">
                 <img class="hotel-card-img" src="images/hotel-card/hotel-card-1.jpg" width="300" height="212" alt="">
                 <h3 class="hotel-card-title">Amara Resort & Spa</h3>
               </a>
@@ -194,7 +180,7 @@
             </li>
 
             <li class="hotel-card">
-              <a href="#" class="hotel-card-link">
+              <a class="hotel-card-link" href="#">
                 <img class="hotel-card-img" src="images/hotel-card/hotel-card-2.jpg" width="300" height="212" alt="">
                 <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
               </a>
@@ -211,7 +197,7 @@
             </li>
 
             <li class="hotel-card">
-              <a href="#" class="hotel-card-link">
+              <a class="hotel-card-link" href="#">
                 <img class="hotel-card-img" src="images/hotel-card/hotel-card-3.jpg" width="300" height="212" alt="">
                 <h3 class="hotel-card-title">Desert Quail Inn</h3>
               </a>
@@ -228,7 +214,7 @@
             </li>
 
             <li class="hotel-card">
-              <a href="#" class="hotel-card-link">
+              <a class="hotel-card-link" href="#">
                 <img class="hotel-card-img" src="images/hotel-card/hotel-card-4.jpg" width="300" height="212" alt="">
                 <h3 class="hotel-card-title">GreenTree Inn</h3>
               </a>
@@ -250,35 +236,31 @@
               <a class="pagination-link pagination-current">1</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-link">2</a>
+              <a class="pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-link">3</a>
+              <a class="pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-link">4</a>
+              <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-link pagination-other">...</a>
+              <a class="pagination-link pagination-other" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a href="#" class="pagination-link">10</a>
+              <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
         </section>
 
         <section class="mailing mailing-white">
           <h2 class="visually-hidden">Рассылка</h2>
-          <p class="title">
-            Подпишитесь на рассылку
-          </p>
-          <p class="subtitle">
-            Только полезная информация и никакого спама,<br> честное бойскаутское!
-          </p>
+          <p class="title">Подпишитесь на рассылку</p>
+          <p class="subtitle">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="mailing-form-field">
               <span class="visually-hidden">Введите ваш e-mail</span>
-              <input type="email" name="email" placeholder="Ваш e-mail" required class="mailing-form-email">
+              <input class="mailing-form-email" type="email" name="email" placeholder="Ваш e-mail" required>
             </label>
             <button class="btn btn-blue mailing-form-btn" type="submit">Подписаться</button>
           </form>
@@ -291,17 +273,17 @@
             <h2 class="visually-hidden">Социальные сети</h2>
             <ul class="footer-social-list">
               <li class="footer-social-item">
-                <a href="https://vk.com/htmlacademy" class="footer-social-link footer-social-vk">
+                <a class="footer-social-link footer-social-vk" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Вконтакте</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a href="https://t.me/htmlacademy" class="footer-social-link footer-social-tg">
+                <a class="footer-social-link footer-social-tg" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Telegram</span>
                 </a>
               </li>
               <li class="footer-social-item">
-                <a href="https://www.youtube.com/user/htmlacademyru" class="footer-social-link footer-social-yt">
+                <a class="footer-social-link footer-social-yt" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
@@ -310,15 +292,12 @@
 
           <section class="footer-contacts">
             <h2 class="visually-hidden">Контакты</h2>
-            <a href="tel:+78128121212" class="footer-contacts-link">
-              +7 (812) 812-12-12
-            </a>
+            <a class="footer-contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </section>
 
           <section class="footer-copyright">
-            <h2 class="visually-hidden">Копирайт</h2>
-            <a href="https://htmlacademy.ru/" class="footer-copyright-link">
-            </a>
+            <h2 class="visually-hidden">Копирайт</h2>
+            <a class="footer-copyright-link" href="https://htmlacademy.ru/"></a>
           </section>
         </div>
       </footer>

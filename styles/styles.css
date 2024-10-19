@@ -452,17 +452,17 @@ img {
   transform: translateX(-50%);
   width: 75px;
   height: 76px;
-  background-image: url(../images/icon/housing-icon.svg);
+  background-image: url("../images/icon/housing-icon.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .services-title-food::before {
-  background-image: url(../images/icon/food-icon.svg);
+  background-image: url("../images/icon/food-icon.svg");
 }
 
 .services-title-souvenirs::before {
-  background-image: url(../images/icon/souvenirs-icon.svg);
+  background-image: url("../images/icon/souvenirs-icon.svg");
 }
 
 .advantages-item-silver {
@@ -558,15 +558,42 @@ img {
   border-radius: 50%;
 }
 
-.form-filters-radio input:checked + .control {
+.control-name {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.choise-radio:checked + .control-name .control {
   background-color: #3f5e72;
   border: 5px solid #ffffff;
 }
 
-.form-filters-check input:checked + .control {
+.choise-check:checked + .control-name .control {
   background-image: url("../images/icon/check.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.choise-radio:disabled + .control-name,
+.choise-check:disabled + .control-name {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.choise-check:not(:disabled) + .control-name:hover,
+.choise-radio:not(:disabled) + .control-name:hover {
+  opacity: 0.6;
+}
+
+.choise-check:not(:disabled) + .control-name:active,
+.choise-radio:not(:disabled) + .control-name:active {
+  opacity: 0.3;
+}
+
+.choise-check:focus + .control-name .control,
+.choise-radio:focus + .control-name .control {
+  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .footer-container {
@@ -799,30 +826,9 @@ img {
 
 .form-filters-check,
 .form-filters-radio {
-  display: flex;
-  gap: 16px;
-  align-items: flex-start;
   font-size: 18px;
   font-weight: 400;
   line-height: 23px;
-}
-
-.form-filters-check:hover,
-.form-filters-radio:hover {
-  opacity: 0.6;
-}
-
-.form-filters-check:active,
-.form-filters-radio:active {
-  opacity: 0.3;
-}
-
-.form-filters-check input:focus + .control {
-  box-shadow: 0 0 0 3px #83b3d3;
-}
-
-.form-filters-radio input:focus + .control {
-  box-shadow: 0 0 0 3px #83b3d3;
 }
 
 .form-range-group {
@@ -955,7 +961,9 @@ img {
 }
 
 .control-wrapper .title {
+  width: 510px;
   margin-top: 6px;
+  text-align: start;
 }
 
 .button-view {
@@ -983,21 +991,22 @@ img {
 }
 
 .button-view-card {
-  background-image: url(../images/icon/sort-icon-card.svg);
+  background-image: url("../images/icon/sort-icon-card.svg");
 }
 
 .button-view-gallery {
-  background-image: url(../images/icon/sort-icon-gallery.svg);
+  background-image: url("../images/icon/sort-icon-gallery.svg");
 }
 
 .button-view-lists {
-  background-image: url(../images/icon/sort-icon-lists.svg);
+  background-image: url("../images/icon/sort-icon-lists.svg");
 }
 
 .sort-control {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  align-items: flex-start;
   gap: 8px;
   margin-left: 20px;
 }
@@ -1111,7 +1120,7 @@ img {
   align-self: center;
   width: 140px;
   height: 30px;
-  background-image: url(../images/icon/rating-stars-icon.svg);
+  background-image: url("../images/icon/rating-stars-icon.svg");
   background-repeat: repeat-x;
   background-position: left;
 }

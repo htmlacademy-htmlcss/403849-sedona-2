@@ -961,7 +961,9 @@ img {
 }
 
 .control-wrapper .title {
+  width: 510px;
   margin-top: 6px;
+  text-align: start;
 }
 
 .button-view {
@@ -1004,6 +1006,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  align-items: flex-start;
   gap: 8px;
   margin-left: 20px;
 }

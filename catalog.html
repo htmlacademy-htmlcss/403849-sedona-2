@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon.png">
   </head>
   <body>
     <div class="page-container">
@@ -64,20 +64,26 @@
               <ul class="form-filters-list">
                 <li class="form-filters-item">
                   <label class="form-filters-check">
-                    <input class="visually-hidden" type="checkbox" name="infrastructure"  value="pool" checked>
-                    <span class="control"></span>Бассейн
+                    <input class="visually-hidden choise-check" type="checkbox" name="infrastructure"  value="pool" checked>
+                    <span class="control-name">
+                      <span class="control"></span>Бассейн
+                    </span>
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-check">
-                    <input class="visually-hidden" type="checkbox" name="infrastructure" value="parking" checked>
-                    <span class="control"></span>Парковка
+                    <input class="visually-hidden choise-check" type="checkbox" name="infrastructure" value="parking" checked>
+                    <span class="control-name">
+                      <span class="control"></span>Парковка
+                    </span>
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-check">
-                    <input class="visually-hidden" type="checkbox" name="infrastructure" value="wi-fi">
-                    <span class="control"></span>Wi-Fi
+                    <input class="visually-hidden choise-check" type="checkbox" name="infrastructure" value="wi-fi">
+                    <span class="control-name">
+                      <span class="control"></span>Wi-Fi
+                    </span>
                   </label>
                 </li>
               </ul>
@@ -87,20 +93,26 @@
               <ul class="form-filters-list">
                 <li class="form-filters-item">
                   <label class="form-filters-radio">
-                    <input class="visually-hidden" type="radio" name="type-housing" value="hotel" checked>
-                    <span class="control"></span>Гостиница
+                    <input class="visually-hidden choise-radio" type="radio" name="type-housing" value="hotel" checked>
+                    <span class="control-name">
+                      <span class="control"></span>Гостиница
+                    </span>
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-radio">
-                    <input class="visually-hidden" type="radio" name="type-housing" value="motel">
-                    <span class="control"></span>Мотель
+                    <input class="visually-hidden choise-radio" type="radio" name="type-housing" value="motel">
+                    <span class="control-name">
+                      <span class="control"></span>Мотель
+                    </span>
                   </label>
                 </li>
                 <li class="form-filters-item">
                   <label class="form-filters-radio">
-                    <input class="visually-hidden" type="radio" name="type-housing" value="apartments">
-                    <span class="control"></span>Апартаменты
+                    <input class="visually-hidden choise-radio" type="radio" name="type-housing" value="apartments">
+                    <span class="control-name">
+                      <span class="control"></span>Апартаменты
+                    </span>
                   </label>
                 </li>
               </ul>
@@ -171,7 +183,7 @@
                 <span class="hotel-type">Гостиница</span>
                 <b class="hotel-price">От 4000 ₽</b>
                 <a class="btn" href="#">Подробнее</a>
-                <a class="btn btn-blue" href="#">В избранное</a>
+                <button class="btn btn-blue" type="button">В избранное</button>
                 <span class="hotel-stars four-hotel-stars">
                   <span class="visually-hidden">4 звезды</span>
                 </span>
@@ -188,7 +200,7 @@
                 <span class="hotel-type">Гостиница</span>
                 <b class="hotel-price">От 5000 ₽</b>
                 <a class="btn" href="#">Подробнее</a>
-                <a class="btn btn-green" href="#">В избранном</a>
+                <button class="btn btn-green" type="button">В избранном</button>
                 <span class="hotel-stars four-hotel-stars">
                   <span class="visually-hidden">4 звезды</span>
                 </span>
@@ -205,7 +217,7 @@
                 <span class="hotel-type">Гостиница</span>
                 <b class="hotel-price">От 2500 ₽</b>
                 <a class="btn" href="#">Подробнее</a>
-                <a class="btn btn-blue" href="#">В избранное</a>
+                <button class="btn btn-blue" type="button">В избранное</button>
                 <span class="hotel-stars three-hotel-stars">
                   <span class="visually-hidden">3 звезды</span>
                 </span>
@@ -222,7 +234,7 @@
                 <span class="hotel-type">Гостиница</span>
                 <b class="hotel-price">От 1500 ₽</b>
                 <a class="btn" href="#">Подробнее</a>
-                <a class="btn btn-blue" href="#">В избранное</a>
+                <button class="btn btn-blue" type="button">В избранное</button>
                 <span class="hotel-stars two-hotel-stars">
                   <span class="visually-hidden">2 звезды</span>
                 </span>
@@ -297,7 +309,7 @@
 
           <section class="footer-copyright">
             <h2 class="visually-hidden">Копирайт</h2>
-            <a class="footer-copyright-link" href="https://htmlacademy.ru/"></a>
+            <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
           </section>
         </div>
       </footer>
